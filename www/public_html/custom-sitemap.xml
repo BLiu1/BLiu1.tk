@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemap name="">
+	<dir name="pages">
+		<dir name="mwc" title="Molecular Weight Calculator">
+			<page>index.php</page>
+		</dir>
+		<dir name="block" title="Block Adventures">
+			<dir name="collisiontest" title="Collision Test">
+				<page>index.php</page>
+			</dir>
+			<dir name="v0.0" title="v0.0">
+				<page>index.php</page>
+			</dir>
+			<dir name="v0.1" title="v0.1">
+				<page>index.php</page>
+			</dir>
+			<dir name="v0.2" title="v0.2">
+				<page>index.php</page>
+			</dir>
+			<dir name="editor" title="Level Editor">
+				<page>index.php</page>
+			</dir>
+			<page>index.php</page>
+		</dir>
+		<dir name="pixelcrank" title="PixelCrank">
+			<page>index.php</page>
+		</dir>
+		<dir name="pixeltracer" title="The Pixel Tracer">
+			<page>index.php</page>
+		</dir>
+		<dir name="efi2" title="Escape from Isolation 2">
+			<page>index.php</page>
+		</dir>
+		<dir name="avoider" title="Avoider Game">
+			<page>index.php</page>
+		</dir>
+		<dir name="edit" title="Text Edit">
+			<page>index.php</page>
+		</dir>
+		<dir name="bsod" title="Fake Blue Screen">
+			<page>index.php</page>
+			<page>stoperror.php</page>
+		</dir>
+		<dir name="overmouse" title="Overmouse">
+			<page>index.php</page>
+		</dir>
+		<dir name="nothing" title="Invisible Nothing">
+			<page>index.php</page>
+		</dir>
+		<page>index.php</page>
+	</dir>
+	<dir name="blog">
+		<page>index.php</page>
+		<page>viewpost.php?id=0</page>
+	</dir>
+	<page>index.php</page>
+	<page>about.php</page>
+	<page>contact.php</page>
+	<page>license.php</page>
+	<page>sitemap.php</page>
+</sitemap>

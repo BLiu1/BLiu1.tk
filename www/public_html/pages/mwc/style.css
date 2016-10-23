@@ -1,0 +1,75 @@
+#toggle_wrap {
+	font-size: 2em;
+	display: block;
+	float: right;
+}
+
+#toggle {
+	display: inline;
+	margin: -1em 1em 0 1em;
+	cursor: pointer;
+}
+
+#atoms_result {
+	min-width: 4em;
+	min-height: 10em;
+}
+
+.hide {
+	display: none;
+}
+
+table {
+	clear: both;
+}
+
+td:first-child {
+	padding: 0 0.5em;
+}
+
+label, input, textarea {
+	width: 300px;
+	font-size: 1.2em;
+}
+
+input {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+ }
+
+@media screen and (max-width: 860px) {
+	table, tbody, tr, td {
+		display: block;
+		clear: both;
+	}
+	
+	td {
+		text-align: center;
+	}
+	
+	td:first-child {
+		padding: 0;
+		margin-top: 1.5em;
+	}
+	
+	label, input, textarea, .button-link {
+		margin: 0 auto;
+		display: inline-block;
+		width: 340px;
+		min-width: 340px;
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	label, input, textarea, .button-link {
+		margin: 0 auto;
+		display: block;
+		min-width: 0;
+		width: 100%;
+		width: calc(100% - 16px);
+	}
+
+	input {
+		font-size: 1em;
+	}
+}

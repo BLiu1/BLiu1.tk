@@ -1,0 +1,42 @@
+CHANGELOG
+
+== Short-Term To Do ==
+* storing and retrieving enemy info in level data
+* http://omfgdogs.com/js/wat.js with http://www.w3schools.com/js/js_function_closures.asp
+
+--- v0.3 ---
+* cleaned up private variables in classes
+* put event listeners in ui.js
+* lava blocks, special rendering, special collision
+* made level pack featuring lava, water, and pseudo-animation
+* multiple players and switching between players
+* entities can now die: added alive vs dead state
+
+--- Level Editor ---
+* created level editor because exporting from Tiled got tedious
+* made export and import functions
+* tidied up code somewhat
+* created key for tiles
+
+--- v0.2 ---
+* overhaul to OOP
+* made level 2
+* created classes.js
+* level navigation buttons
+* made many more levels using level editor
+* migrated some functions to init.js and classes.js
+* improved performance by checking player position and not rendering if in same place
+
+--- v0.1 ---
+* my sister made level 1
+* wasd control, reset hotkey, level advancement
+* death by pitfall
+
+--- Collision Test ---
+* made during v0.0 development to work out collision rules
+* collision resolution based on direction of collision
+
+--- v0.0 ---
+* first version
+* put basics of drawing on canvas and platformer mechanic together
+* made level 0

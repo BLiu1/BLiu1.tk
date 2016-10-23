@@ -1,0 +1,284 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Slabo+13px|Slabo+27px';
+
+* {
+	background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+}
+
+body {
+	background-color: #222222;
+	background-image: url(/images/background.svg);
+	background-size: 20px;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 0;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	line-height: 1.25;
+}
+
+header#title-bar {
+	position: fixed;
+	display: block;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+}
+
+body::before {
+	display: block;
+	width: 0;
+	height: 80px;
+	content: "";
+}
+
+section {
+	margin: 0 auto;
+	box-shadow: 0px 0px 200px #FFFFFF;
+	background-color: #FFFFFF;
+	border: 3px solid #DDDDDD;
+	border-radius: 20px;
+}
+
+footer {
+	width: 100%;
+	padding: 20px;
+	background-color: #004780;
+	color: #FFFFFF;
+	font-size: 0.8em;
+}
+
+::selection {
+	background: rgba(128,128,128,0.2);
+	text-shadow: none;
+}
+::-moz-selection {
+	background: rgba(128,128,128,0.2);
+	text-shadow: none;
+}
+
+/*------------------------------------------*/
+
+h1, h2 {
+	font-family: "Slabo 27px", "Times New Roman", serif;
+	font-weight: normal;
+}
+
+h3, h4, h5, h6 {
+	font-family: "Slabo 13px", "Times New Roman", serif;
+	font-weight: normal;
+}
+
+p + p {
+	margin-top: -0.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #0020FF;
+}
+
+section a:hover {
+	color: #334DFF;
+}
+
+section a:visited {
+	color: #9600FF;
+}
+
+section a:visited:hover {
+	color: #AB33FF;
+}
+
+footer img {
+	display: block;
+	margin: 5px auto;
+}
+
+footer p {
+	padding: 0;
+}
+
+footer a {
+	color: cyan;
+}
+
+#eXdiv {float:right;}
+
+/*------------------------------------------*/
+/* Header Styling and Media Queries */
+
+#header-content {
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+header h1{
+    display: block;
+    position: relative;
+    margin: -40px 0 0 120px;
+	line-height: 0em;
+	padding: 0;
+	font-size: 4em;
+	color: #76FF03; /* Material Light Green A400 */
+	text-shadow: 2px 4px 2px black, 0 0 40px, 0 0 40px, 0 0 40px;
+}
+
+header h1 span {
+	color: #18FFFF; /* Material Cyan A200 */
+}
+
+@media screen and (min-width: 960px) {
+	section.content, footer {
+		max-width: 960px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	header h1 {
+		margin-left: 80px;
+		font-size: 3em;
+		text-shadow: 2px 4px 2px black, 0 0 30px, 0 0 30px, 0 0 30px;
+	}
+}
+
+/*------------------------------------------*/
+/* Animated Logo */
+
+#logo-anim {
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	display: inline-block;
+	background-image: url("/images/logo-spritesheet.png");
+	background-size: auto 64px;
+}
+
+#logo-anim:hover {
+	animation: play-logo 2s steps(3) infinite;
+}
+
+@keyframes play-logo {
+	50% {background-position: -192px;}
+}
+
+/*------------------------------------------*/
+/* Navigation Menu CSS */
+
+nav {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul {
+	font-size: 1.25em;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	height: 100%;
+}
+
+nav ul li ul {
+	display: none;
+}
+
+nav ul li a {
+	display: inline-block;
+	text-decoration: none;
+	height: 100%;
+	color: #FFFFFF;
+	margin: 0 -3px;
+	padding: 0 20px;
+	white-space: nowrap;
+	transition: background-color 0.5s;
+	background: #8BC34A; /* Material Light Green 500 */
+}
+
+nav ul li a:not(:active):hover {
+	transition: background-color 0.0001s;
+	background: #7CB342; /* Material Light Green 600 */
+}
+
+nav ul li a:active {
+	transition: background-color 0.0001s;
+	background: #689F38; /* Material Light Green 700 */
+}
+
+nav ul li a:active:hover {
+	transition: background-color 0.0001s;
+}
+
+nav ul li a:focus:hover {
+	transition: background-color 0.5s;
+}
+
+nav > ul > li > a {
+	line-height: 80px;
+	white-space: nowrap;
+}
+
+nav li.drop ul {
+	display: block;
+	position: absolute;
+}
+
+nav li.drop li {
+	display: block;
+	margin: 0;
+	height: auto;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+nav li.drop a {
+	background: #00BCD4; /* Material Cyan 500 */
+}
+
+nav li.drop li a {
+	display: block;
+	padding: 10px 20px;
+}
+
+nav li.drop li a:hover {
+	background: #00ACC1; /* Material Cyan 600 */
+}
+
+nav li.drop li a:active {
+	background: #0097A7; /* Material Cyan 700 */
+}
+
+nav .material-icons {
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 960px) {
+	nav > ul {
+		display: none;
+	}
+	nav::before {
+
+	}
+}
+
+/*------------------------------------------*/
+/* Blogpost Preview */
+
+.blogpost-preview {
+	margin: 20px;
+	padding: 5px;
+	box-shadow: 0 3px 20px black;
+}

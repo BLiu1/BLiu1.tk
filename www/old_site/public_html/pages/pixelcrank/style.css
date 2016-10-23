@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+
+.overlay {
+	z-index: 100;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 600px;
+	background: #000;
+	border-radius: 20px;
+	box-shadow: white 0 0 20px, rgba(0, 0, 0, 0.8) 0 0 0px 3141592px;
+	padding: 0 31.415px 20px 31.415px;
+	color: #FFF;
+}
+
+h1 {
+	font-size: 3.1415926535em;
+}
+
+#button {
+	text-align: center;
+}
+
+.button-link {
+	margin: 10px 20px 0 20px;
+}
+
+.button-link:hover {
+	cursor: pointer;
+}
+
+#back a {
+	color:#eee;
+}
+
+canvas {
+	background: #000;
+	image-rendering: optimizeSpeed;             /* Older versions of FF    */
+	image-rendering: -moz-crisp-edges;          /* FF 6.0+                 */
+	image-rendering: -webkit-optimize-contrast; /* Safari                  */
+	image-rendering: -o-crisp-edges;            /* OS X & W Opera (12.02+) */
+	image-rendering: pixelated;                 /* Chrome                  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE                      */
+}

@@ -1,0 +1,14 @@
+background:
+/*Diagonal*/
+linear-gradient(65deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 50%) 40px 0,
+linear-gradient(65deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 50%),
+linear-gradient(-65deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 50%),
+linear-gradient(-65deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 50%) 40px 0,
+
+/*Horizontal*/
+linear-gradient(0deg, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0.2) 50%),
+linear-gradient(0deg, rgba(255,255,255,0.4) 50%, rgba(0,0,0,0.2) 50%) 0 40px,
+
+/*Vertical*/
+linear-gradient(90deg, #222222 25%, #444444 25%, #444444 50%, #222222 50%, #222222 75%, #444444 75%),
+#222222;

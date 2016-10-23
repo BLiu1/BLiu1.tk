@@ -1,0 +1,31 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+
+# 404 page
+ErrorDocument 404 /notfound.php
+
+# All pages PHP
+#RemoveHandler .html .htm
+#AddType application/x-httpd-php .php .html
+
+# Stop web host from injecting stuff at the end of pages
+# php_value auto_append_file none
+
+# Basic caching rules
+#ExpiresActive On
+#ExpiresByType image/png "modification"
+#ExpiresByType image/gif "modification"
+#ExpiresByType text/css "modification"
+#ExpiresByType text/html "modification"
+#ExpiresByType text/javascript "modification"
+#ExpiresByType application/javascript "modification"
+#ExpiresByType application/x-httpd-php "modification"
+
+# mod_rewrite stuff
+Options +FollowSymLinks
+RewriteEngine On
+
+# Force www.
+# RewriteCond %{HTTP_HOST} !^www\.bliu1\.tk [NC]
+# RewriteCond %{HTTP_HOST} (.*)
+# RewriteRule  (.*) http://www.bliu1.tk/$1 [R=301]

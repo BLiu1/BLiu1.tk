@@ -1,0 +1,18 @@
+TODO:
+
+Enemies
+* Laser Beams
+* Moving Walls
+* Swinging Spiky Balls
+* Acidic Waterfalls
+* Poisonous Fog
+* 
+
+Collectibles
+* Cake-GRAND PRIZE
+* 
+
+Powerups
+* Speed Boost
+* Energy Shield
+* Orbs of blueish glowy light

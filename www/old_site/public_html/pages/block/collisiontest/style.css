@@ -1,0 +1,30 @@
+body {
+	background-color: #080808;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+canvas {
+	display: block;
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	border: 1px solid black;
+	background: white;
+}
+
+#github_ribbon {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#back {
+	color: #FFFFFF;
+}
+
+#back:hover {
+	text-decoration: underline;
+}
